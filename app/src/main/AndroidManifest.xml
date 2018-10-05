@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toplin.handlersample">
+
+    <application
+        android:name="com.toplin.handlersample.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.toplin.handlersample.navigation.NavigationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.toplin.handlersample.simple_post_messages.SimplePostMessagesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.toplin.handlersample.thread_communication.ui.ThreadCommunicationActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.toplin.handlersample.thread_communication.domain.provider.JobProviderService"
+            android:exported="false" />
+
+        <service
+            android:name="com.toplin.handlersample.thread_communication.domain.consumer.JobConsumerService"
+            android:exported="false" />
+    </application>
+</manifest>

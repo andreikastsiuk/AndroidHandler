@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HandlerSample</string>
+
+    <!--Navigation screen-->
+    <string name="navigation_simple_messages">Simple messages</string>
+    <string name="navigation_thread_communication">Thread communication</string>
+
+    <!--Simple Post Messages screen-->
+    <string name="simple_post_messages_post">post</string>
+    <string name="simple_post_messages_post_delay">post delay</string>
+    <string name="simple_post_messages_post_at_time">post at time</string>
+
+</resources>
